@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyegina School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="vendor/aos/aos.css">  <!-- AOS for scroll animations -->
+</head>
+<body>
+
+    <!-- Slider Section -->
+    <section id="events" class="carousel">
+        <div class="slides">
+            <div class="slide active">
+                <img src="assets/images/1.jpg" alt="Event 1">
+                <p>Annual Sports Day</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/2.jpg" alt="Event 2">
+                <p>Science Fair</p>
+            </div>
+            <div class="slide">
+                <img src="assets/images/3.jpg" alt="Event 3">
+                <p>Cultural Festival</p>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- About Section with Scroll Animation -->
+    <section id="about" class="content-section" data-aos="fade-left">
+        <h2>About Nyegina</h2>
+        <p>Nyegina Secondary School is committed to high-quality education...</p>
+    </section>
+
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="vendor/aos/aos.js"></script>  <!-- AOS initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
